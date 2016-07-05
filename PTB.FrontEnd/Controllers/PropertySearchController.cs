@@ -30,7 +30,7 @@ namespace PTB.FrontEnd.Controllers
         public PropertySearchModel getSearchByClientInfo([FromBody]PropertyClientInfoSearchModel filters)
         {
             try
-            {
+            { 
                 PropertyRepository _searchRepository = new PropertyRepository();
                 var propertySearchResult = _searchRepository.SearchPropertyByClientInfo(filters.PageNumber, filters.PageSize, 
                                                 filters.firstName, filters.lastName, filters.phone, 
