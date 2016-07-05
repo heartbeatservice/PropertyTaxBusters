@@ -15,6 +15,18 @@ namespace PTB
                         routeTemplate: "api/Search/PropertySearch",
                             defaults: new { controller = "PropertySearch", action = "getSearch" }
                 );
+
+            config.Routes.MapHttpRoute(
+                      name: "PropertySearchByClientInfo",
+                       routeTemplate: "api/Search/PropertySearchByClientInfo",
+                           defaults: new { controller = "PropertySearch", action = "getSearchByClientInfo" }
+               );
+
+            config.Routes.MapHttpRoute(
+                      name: "PropertyAdvanceSearch",
+                       routeTemplate: "api/Search/PropertyAdvanceSearch",
+                           defaults: new { controller = "PropertySearch", action = "getAdvanceSearch" }
+               );
             config.Routes.MapHttpRoute(
                        name: "getPropertyById",
                         routeTemplate: "api/Search/getPropertyById",

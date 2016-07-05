@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eb00dd07bfc5456686e8dbd971bd8d7b" Name="Diagram1" ZoomLevel="24">
+        <EntityTypeShape EntityType="PropertyTaxBustersModel.ErrorLog_TBL" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyTaxBustersModel.FallOut_TBL" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyTaxBustersModel.Property_TBL" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyTaxBustersModel.PropertyAppealValues_TBL" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyTaxBustersModel.PropertyAssessedValue_TBL" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyTaxBustersModel.PropertyScrapeData_TBL" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PropertyTaxBustersModel.PropertyScrapeDetail_TBL" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="PropertyTaxBustersModel.FK_PropertyAppealValues_TBL_Property_TBL" ManuallyRouted="false" />
+        <AssociationConnector Association="PropertyTaxBustersModel.FK_PropertyAssessedValue_TBL_Property_TBL" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

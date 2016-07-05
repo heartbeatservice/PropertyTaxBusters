@@ -59,6 +59,92 @@ namespace PTB.DataAccess
             }
         }
 
+        public PropertySearchModel SearchPropertyByClientInfo(int pageNumber, int pageSize, string firstName, string lastName, string phone, string address, string email)
+        {
+            using (var conn = new SqlConnection(PTBConnectionString))
+            {
+                conn.Open();
+
+                using (var cmd = new SqlCommand("SearchPropertyByClientInfo", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@PageNbr", SqlDbType.NVarChar).Value = pageNumber;
+                    cmd.Parameters.Add("@PageSize", SqlDbType.NVarChar).Value = pageSize;
+                    cmd.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = firstName;
+                    cmd.Parameters.Add("@lastName", SqlDbType.NVarChar).Value = lastName;
+                    cmd.Parameters.Add("@phone", SqlDbType.NVarChar).Value = phone;
+                    cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = address;
+                    cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = email;
+
+                    PropertySearchModel propertySearchModel = new PropertySearchModel();
+                    //var myReader = cmd.ExecuteReader();
+                    using (var myReader = cmd.ExecuteReader())
+                    {
+                        try
+                        {
+                            while (myReader.Read())
+                            {
+                                propertySearchModel.TotalResultCount = (int)myReader["TotalCount"];
+                                propertySearchModel.Properties.Add(new PropertyModel(myReader));
+                            }
+                            //}
+
+                        }
+                        catch (Exception ex)
+                        {
+                            // LOG ERROR
+                            throw ex;
+                        }
+                    }
+                    return propertySearchModel;
+                }
+            }
+        }
+
+        public PropertySearchModel AdvanceSearchProperty(int pageNumber, int pageSize, string houseNumber, string street, string city, string town, string zipCode)
+        {
+            using (var conn = new SqlConnection(PTBConnectionString))
+            {
+                conn.Open();
+
+                using (var cmd = new SqlCommand("AdvanceSearchProperty", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@PageNbr", SqlDbType.NVarChar).Value = pageNumber;
+                    cmd.Parameters.Add("@PageSize", SqlDbType.NVarChar).Value = pageSize;
+                    cmd.Parameters.Add("@houseNumber", SqlDbType.NVarChar).Value = houseNumber;
+                    cmd.Parameters.Add("@street", SqlDbType.NVarChar).Value = street;
+                    cmd.Parameters.Add("@city", SqlDbType.NVarChar).Value = city;
+                    cmd.Parameters.Add("@town", SqlDbType.NVarChar).Value = town;
+                    cmd.Parameters.Add("@zipCode", SqlDbType.NVarChar).Value = zipCode;
+
+                    PropertySearchModel propertySearchModel = new PropertySearchModel();
+                    //var myReader = cmd.ExecuteReader();
+                    using (var myReader = cmd.ExecuteReader())
+                    {
+                        try
+                        {
+                            while (myReader.Read())
+                            {
+                                propertySearchModel.TotalResultCount = (int)myReader["TotalCount"];
+                                propertySearchModel.Properties.Add(new PropertyModel(myReader));
+                            }
+                            //}
+
+                        }
+                        catch (Exception ex)
+                        {
+                            // LOG ERROR
+                            throw ex;
+                        }
+                    }
+                    return propertySearchModel;
+                }
+            }
+        }
+
         public PropertyModel GetPropertyById(long propertyId)
         {
             using (var conn = new SqlConnection(PTBConnectionString))

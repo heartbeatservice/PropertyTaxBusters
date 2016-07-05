@@ -6,6 +6,7 @@
     $scope.PageNumber = 1;
     $scope.propertiesData = [];
     $scope.isMainLoadingImageCollapsed = true;
+    $scope.activeTab = 'legal';
     $scope.onClickFirst = function () {
         $scope.PageNumber = 1;
         $scope.onPropertySearch();
@@ -22,7 +23,11 @@
         $scope.PageNumber = $scope.PageNumber - 1;
         $scope.onPropertySearch();
     }
+
     $scope.onPropertySearch = function () {
+        $("#btnSearch").attr("class", "btn btn-primary btn-sm disabled");
+        $scope.isMainLoadingImageCollapsed = false;
+        var resource = location.protocol + "//" + location.host + "/api/Search/PropertySearch";
         var data = {
             PageSize: $scope.PageSize,
             PageNumber: $scope.PageNumber,
@@ -30,9 +35,45 @@
             section: $scope.section,
             block: $scope.block
         };
-        $("#btnSearch").attr("class", "btn btn-primary btn-sm disabled");
-        $scope.isMainLoadingImageCollapsed = false;
-        var resource = location.protocol + "//" + location.host + "/api/Search/PropertySearch";
+        
+        if ($scope.activeTab == 'legal')
+        {
+            resource = location.protocol + "//" + location.host + "/api/Search/PropertySearch";
+            data = {
+                PageSize: $scope.PageSize,
+                PageNumber: $scope.PageNumber,
+                Lot: $scope.lot,
+                section: $scope.section,
+                block: $scope.block
+            };
+        }
+        else if ($scope.activeTab == 'clientinfo')
+        {
+            resource = location.protocol + "//" + location.host + "/api/Search/PropertySearchByClientInfo";
+            data = {
+                PageSize: $scope.PageSize,
+                PageNumber: $scope.PageNumber,
+                firstName: $scope.firstName,
+                lastName: $scope.lastName,
+                phone: $scope.phone,
+                address: $scope.address,
+                email: $scope.email
+            };
+        }
+        else if ($scope.activeTab == 'advance')
+        {
+            resource = location.protocol + "//" + location.host + "/api/Search/PropertyAdvanceSearch";
+            data = {
+                PageSize: $scope.PageSize,
+                PageNumber: $scope.PageNumber,
+                houseNumber: $scope.houseNumber,
+                street: $scope.street,
+                city: $scope.city,
+                town: $scope.town,
+                zipCode: $scope.zipCode
+            };
+        }
+
         $http.post(resource, data).success(function (data, status) {
             $scope.propertiesData = data;
             if (data.Properties.length > 0) {
@@ -75,6 +116,8 @@
              $("#btnSearch").attr("class", "btn btn-primary btn-sm");
          })
     }
+
+
     $scope.viewDetail = function (id) {
         $scope.propertyDetail = {};
         $scope.propertyDetail.Id = id;

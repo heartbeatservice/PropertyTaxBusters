@@ -27,6 +27,39 @@ namespace PTB.FrontEnd.Controllers
         }
 
         [HttpPost]
+        public PropertySearchModel getSearchByClientInfo([FromBody]PropertyClientInfoSearchModel filters)
+        {
+            try
+            {
+                PropertyRepository _searchRepository = new PropertyRepository();
+                var propertySearchResult = _searchRepository.SearchPropertyByClientInfo(filters.PageNumber, filters.PageSize, 
+                                                filters.firstName, filters.lastName, filters.phone, 
+                                                filters.address, filters.email);
+                return propertySearchResult;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        [HttpPost]
+        public PropertySearchModel getAdvanceSearch([FromBody]PropertyAdvanceSearchModel filters)
+        {
+            try
+            {
+                PropertyRepository _searchRepository = new PropertyRepository();
+                var propertySearchResult = _searchRepository.AdvanceSearchProperty(filters.PageNumber, filters.PageSize, 
+                                                    filters.houseNumber, filters.street, filters.city,
+                                                    filters.town, filters.zipCode);
+                return propertySearchResult;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        [HttpPost]
         public PropertyModel getPropertyById([FromBody]long id)
         {
             try
