@@ -1,0 +1,10 @@
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\bin\Release\PropertyTaxBusters.DataAccess.dll.config
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\bin\Release\PropertyTaxBusters.DataAccess.dll
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\bin\Release\PropertyTaxBusters.DataAccess.pdb
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\bin\Release\EntityFramework.dll
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\bin\Release\EntityFramework.xml
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\obj\Release\PropertyTaxBusters.DataAccess.csprojResolveAssemblyReference.cache
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\obj\Release\PropertyTaxBusters.DataAccess.dll
+C:\Projects\github\PropertyTaxBusters\PropertyTaxBusters.DataAccess\obj\Release\PropertyTaxBusters.DataAccess.pdb

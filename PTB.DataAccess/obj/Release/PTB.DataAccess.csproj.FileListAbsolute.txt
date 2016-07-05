@@ -19,3 +19,10 @@ C:\Projects\github\PTB.FrontEnd\PTB.DataAccess\bin\Release\PTB.Entities.pdb
 C:\Projects\github\PTB.FrontEnd\PTB.DataAccess\obj\Release\PTB.DataAccess.csprojResolveAssemblyReference.cache
 C:\Projects\github\PTB.FrontEnd\PTB.DataAccess\obj\Release\PTB.DataAccess.dll
 C:\Projects\github\PTB.FrontEnd\PTB.DataAccess\obj\Release\PTB.DataAccess.pdb
+C:\Projects\github\PropertyTaxBusters\PTB.DataAccess\bin\Release\PTB.DataAccess.dll
+C:\Projects\github\PropertyTaxBusters\PTB.DataAccess\bin\Release\PTB.DataAccess.pdb
+C:\Projects\github\PropertyTaxBusters\PTB.DataAccess\bin\Release\PTB.Entities.dll
+C:\Projects\github\PropertyTaxBusters\PTB.DataAccess\bin\Release\PTB.Entities.pdb
+C:\Projects\github\PropertyTaxBusters\PTB.DataAccess\obj\Release\PTB.DataAccess.csprojResolveAssemblyReference.cache
+C:\Projects\github\PropertyTaxBusters\PTB.DataAccess\obj\Release\PTB.DataAccess.dll
+C:\Projects\github\PropertyTaxBusters\PTB.DataAccess\obj\Release\PTB.DataAccess.pdb

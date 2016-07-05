@@ -13,3 +13,8 @@ C:\Projects\github\PTB.FrontEnd\PTB.Entities\bin\Release\PTB.Entities.pdb
 C:\Projects\github\PTB.FrontEnd\PTB.Entities\obj\Release\PTB.Entities.csprojResolveAssemblyReference.cache
 C:\Projects\github\PTB.FrontEnd\PTB.Entities\obj\Release\PTB.Entities.dll
 C:\Projects\github\PTB.FrontEnd\PTB.Entities\obj\Release\PTB.Entities.pdb
+C:\Projects\github\PropertyTaxBusters\PTB.Entities\bin\Release\PTB.Entities.dll
+C:\Projects\github\PropertyTaxBusters\PTB.Entities\bin\Release\PTB.Entities.pdb
+C:\Projects\github\PropertyTaxBusters\PTB.Entities\obj\Release\PTB.Entities.csprojResolveAssemblyReference.cache
+C:\Projects\github\PropertyTaxBusters\PTB.Entities\obj\Release\PTB.Entities.dll
+C:\Projects\github\PropertyTaxBusters\PTB.Entities\obj\Release\PTB.Entities.pdb

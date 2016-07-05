@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PropertyTaxBustersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ErrorLog_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileName" Type="varchar" MaxLength="50" />
+    <Property Name="Exception" Type="nvarchar(max)" />
+    <Property Name="StackTrace" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FallOut_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileName" Type="varchar" MaxLength="50" />
+    <Property Name="Lot" Type="varchar" MaxLength="50" />
+    <Property Name="Section" Type="varchar" MaxLength="50" />
+    <Property Name="Block" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Property_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="irreg_desc" Type="varchar" MaxLength="50" />
+    <Property Name="wat_desc" Type="varchar" MaxLength="50" />
+    <Property Name="ratio1" Type="varchar" MaxLength="50" />
+    <Property Name="ratio2" Type="varchar" MaxLength="50" />
+    <Property Name="ratio3" Type="varchar" MaxLength="50" />
+    <Property Name="new_dist" Type="varchar" MaxLength="50" />
+    <Property Name="section" Type="varchar" MaxLength="50" />
+    <Property Name="block" Type="varchar" MaxLength="50" />
+    <Property Name="lot" Type="varchar" MaxLength="50" />
+    <Property Name="lot1" Type="varchar" MaxLength="50" />
+    <Property Name="ht_enc" Type="varchar" MaxLength="50" />
+    <Property Name="garage" Type="varchar" MaxLength="50" />
+    <Property Name="foundation" Type="varchar" MaxLength="50" />
+    <Property Name="bsmt_fin" Type="varchar" MaxLength="50" />
+    <Property Name="basement" Type="varchar" MaxLength="50" />
+    <Property Name="irregular" Type="varchar" MaxLength="50" />
+    <Property Name="lot_acres" Type="varchar" MaxLength="50" />
+    <Property Name="rooms_bath" Type="varchar" MaxLength="50" />
+    <Property Name="waterfront" Type="varchar" MaxLength="50" />
+    <Property Name="built" Type="varchar" MaxLength="50" />
+    <Property Name="full_baths" Type="varchar" MaxLength="50" />
+    <Property Name="half_baths" Type="varchar" MaxLength="50" />
+    <Property Name="attic" Type="varchar" MaxLength="50" />
+    <Property Name="fireplace" Type="varchar" MaxLength="50" />
+    <Property Name="heat_type" Type="varchar" MaxLength="50" />
+    <Property Name="fuel_type" Type="varchar" MaxLength="50" />
+    <Property Name="ext_wall" Type="varchar" MaxLength="50" />
+    <Property Name="lot_group" Type="varchar" MaxLength="50" />
+    <Property Name="district" Type="varchar" MaxLength="50" />
+    <Property Name="dista" Type="varchar" MaxLength="50" />
+    <Property Name="township" Type="varchar" MaxLength="50" />
+    <Property Name="house_numb" Type="varchar" MaxLength="50" />
+    <Property Name="st_name" Type="varchar" MaxLength="50" />
+    <Property Name="village" Type="varchar" MaxLength="50" />
+    <Property Name="dir" Type="varchar" MaxLength="50" />
+    <Property Name="zip_code" Type="varchar" MaxLength="50" />
+    <Property Name="apt" Type="varchar" MaxLength="50" />
+    <Property Name="unit" Type="varchar" MaxLength="50" />
+    <Property Name="res_number" Type="varchar" MaxLength="50" />
+    <Property Name="res_street" Type="varchar" MaxLength="50" />
+    <Property Name="st_swis_co" Type="varchar" MaxLength="50" />
+    <Property Name="owner_name" Type="varchar" MaxLength="50" />
+    <Property Name="old_name" Type="varchar" MaxLength="50" />
+    <Property Name="mailing_ad" Type="varchar" MaxLength="50" />
+    <Property Name="mailing_a1" Type="varchar" MaxLength="50" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="varchar" MaxLength="50" />
+    <Property Name="zip_code1" Type="varchar" MaxLength="50" />
+    <Property Name="prop_class" Type="varchar" MaxLength="50" />
+    <Property Name="class_suf" Type="varchar" MaxLength="50" />
+    <Property Name="tax_class" Type="varchar" MaxLength="50" />
+    <Property Name="lot_size" Type="varchar" MaxLength="50" />
+    <Property Name="cav_land" Type="varchar" MaxLength="50" />
+    <Property Name="cav_total" Type="varchar" MaxLength="50" />
+    <Property Name="av_land" Type="varchar" MaxLength="50" />
+    <Property Name="av_total" Type="varchar" MaxLength="50" />
+    <Property Name="town_code" Type="varchar" MaxLength="50" />
+    <Property Name="lsqft" Type="varchar" MaxLength="50" />
+    <Property Name="str_ind" Type="varchar" MaxLength="50" />
+    <Property Name="bc_amt" Type="varchar" MaxLength="50" />
+    <Property Name="ed_amt" Type="varchar" MaxLength="50" />
+    <Property Name="style" Type="varchar" MaxLength="50" />
+    <Property Name="livunit" Type="varchar" MaxLength="50" />
+    <Property Name="rec_no" Type="varchar" MaxLength="50" />
+    <Property Name="condolvl" Type="varchar" MaxLength="50" />
+    <Property Name="lspace" Type="varchar" MaxLength="50" />
+    <Property Name="east" Type="varchar" MaxLength="50" />
+    <Property Name="north" Type="varchar" MaxLength="50" />
+    <Property Name="street" Type="varchar" MaxLength="50" />
+    <Property Name="traffic" Type="varchar" MaxLength="50" />
+    <Property Name="topo" Type="varchar" MaxLength="50" />
+    <Property Name="loc" Type="varchar" MaxLength="50" />
+    <Property Name="fron" Type="varchar" MaxLength="50" />
+    <Property Name="util" Type="varchar" MaxLength="50" />
+    <Property Name="code" Type="varchar" MaxLength="50" />
+    <Property Name="mgfa" Type="varchar" MaxLength="50" />
+    <Property Name="src" Type="varchar" MaxLength="50" />
+    <Property Name="tsplit" Type="varchar" MaxLength="50" />
+    <Property Name="highlight" Type="varchar" MaxLength="50" />
+    <Property Name="fld_pnl" Type="varchar" MaxLength="50" />
+    <Property Name="fld_zn" Type="varchar" MaxLength="50" />
+    <Property Name="fld_dt" Type="varchar" MaxLength="50" />
+    <Property Name="rate_t" Type="varchar" MaxLength="50" />
+    <Property Name="recno" Type="varchar" MaxLength="50" />
+    <Property Name="Client1" Type="varchar" MaxLength="50" />
+    <Property Name="Client2" Type="varchar" MaxLength="50" />
+    <Property Name="Client3" Type="varchar" MaxLength="50" />
+    <Property Name="Client4" Type="varchar" MaxLength="50" />
+    <Property Name="Client5" Type="varchar" MaxLength="50" />
+    <Property Name="Client6" Type="varchar" MaxLength="50" />
+    <Property Name="Client7" Type="varchar" MaxLength="50" />
+    <Property Name="Client8" Type="varchar" MaxLength="50" />
+    <Property Name="Client9" Type="varchar" MaxLength="50" />
+    <Property Name="Client10" Type="varchar" MaxLength="50" />
+    <Property Name="Client11" Type="varchar" MaxLength="50" />
+    <Property Name="Client12" Type="varchar" MaxLength="50" />
+    <Property Name="Client13" Type="varchar" MaxLength="50" />
+    <Property Name="Client14" Type="varchar" MaxLength="50" />
+    <Property Name="Client15" Type="varchar" MaxLength="50" />
+    <Property Name="SalesDate" Type="varchar" MaxLength="50" />
+    <Property Name="SalesPrice" Type="varchar" MaxLength="50" />
+    <Property Name="Town" Type="varchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PropertyAppealValues_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyId" Type="bigint" Nullable="false" />
+    <Property Name="RollYear" Type="nvarchar" MaxLength="10" />
+    <Property Name="AppealType" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReferenceNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedAssessment" Type="nvarchar" MaxLength="50" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="Modified" Type="datetime" />
+    <Property Name="ModifyBy" Type="int" />
+  </EntityType>
+  <EntityType Name="PropertyAssessedValue_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyId" Type="bigint" Nullable="false" />
+    <Property Name="Year" Type="nvarchar" MaxLength="10" />
+    <Property Name="AssessedValue" Type="bigint" />
+    <Property Name="TaxRollStatus" Type="nvarchar" MaxLength="100" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="Modified" Type="datetime" />
+    <Property Name="ModifyBy" Type="int" />
+  </EntityType>
+  <EntityType Name="PropertyScrapeData_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Section" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Lot" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Block" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PropertyScrapeDetail_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyId" Type="bigint" Nullable="false" />
+    <Property Name="IsFound" Type="bit" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PropertyAppealValues_TBL_Property_TBL">
+    <End Role="Property_TBL" Type="Self.Property_TBL" Multiplicity="1" />
+    <End Role="PropertyAppealValues_TBL" Type="Self.PropertyAppealValues_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_TBL">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PropertyAppealValues_TBL">
+        <PropertyRef Name="PropertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyAssessedValue_TBL_Property_TBL">
+    <End Role="Property_TBL" Type="Self.Property_TBL" Multiplicity="1" />
+    <End Role="PropertyAssessedValue_TBL" Type="Self.PropertyAssessedValue_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_TBL">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PropertyAssessedValue_TBL">
+        <PropertyRef Name="PropertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="GetScrapeDataByTableName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tableName" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="PropertyTaxBustersModelStoreContainer">
+    <EntitySet Name="ErrorLog_TBL" EntityType="Self.ErrorLog_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FallOut_TBL" EntityType="Self.FallOut_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Property_TBL" EntityType="Self.Property_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyAppealValues_TBL" EntityType="Self.PropertyAppealValues_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyAssessedValue_TBL" EntityType="Self.PropertyAssessedValue_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyScrapeData_TBL" EntityType="Self.PropertyScrapeData_TBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyScrapeDetail_TBL" EntityType="Self.PropertyScrapeDetail_TBL" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_PropertyAppealValues_TBL_Property_TBL" Association="Self.FK_PropertyAppealValues_TBL_Property_TBL">
+      <End Role="Property_TBL" EntitySet="Property_TBL" />
+      <End Role="PropertyAppealValues_TBL" EntitySet="PropertyAppealValues_TBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyAssessedValue_TBL_Property_TBL" Association="Self.FK_PropertyAssessedValue_TBL_Property_TBL">
+      <End Role="Property_TBL" EntitySet="Property_TBL" />
+      <End Role="PropertyAssessedValue_TBL" EntitySet="PropertyAssessedValue_TBL" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

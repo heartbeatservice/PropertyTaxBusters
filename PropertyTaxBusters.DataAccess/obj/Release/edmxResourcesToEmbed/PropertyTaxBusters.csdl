@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PropertyTaxBustersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ErrorLog_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Exception" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="FallOut_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Section" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Block" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Property_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="irreg_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wat_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ratio1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ratio2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ratio3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="new_dist" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="section" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="block" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lot" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lot1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ht_enc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="garage" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="foundation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="bsmt_fin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="basement" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="irregular" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lot_acres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rooms_bath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="waterfront" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="built" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="full_baths" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="half_baths" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="attic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fireplace" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="heat_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fuel_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ext_wall" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lot_group" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="district" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dista" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="township" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="house_numb" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="st_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="village" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dir" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="zip_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="apt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="unit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="res_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="res_street" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="st_swis_co" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="owner_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="old_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mailing_ad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mailing_a1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="zip_code1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="prop_class" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="class_suf" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tax_class" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lot_size" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cav_land" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cav_total" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="av_land" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="av_total" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="town_code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lsqft" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="str_ind" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="bc_amt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ed_amt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="style" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="livunit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rec_no" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="condolvl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lspace" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="east" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="north" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="street" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="traffic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="topo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="loc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fron" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="util" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mgfa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="src" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tsplit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="highlight" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fld_pnl" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fld_zn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fld_dt" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rate_t" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="recno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client6" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client7" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client8" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client9" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client10" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client11" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client12" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client13" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client14" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client15" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SalesDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SalesPrice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Town" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PropertyAppealValues_TBL" Relationship="Self.FK_PropertyAppealValues_TBL_Property_TBL" FromRole="Property_TBL" ToRole="PropertyAppealValues_TBL" />
+    <NavigationProperty Name="PropertyAssessedValue_TBL" Relationship="Self.FK_PropertyAssessedValue_TBL_Property_TBL" FromRole="Property_TBL" ToRole="PropertyAssessedValue_TBL" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PropertyAppealValues_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PropertyId" Type="Int64" Nullable="false" />
+    <Property Name="RollYear" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="AppealType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ReferenceNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedAssessment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="Modified" Type="DateTime" Precision="3" />
+    <Property Name="ModifyBy" Type="Int32" />
+    <NavigationProperty Name="Property_TBL" Relationship="Self.FK_PropertyAppealValues_TBL_Property_TBL" FromRole="PropertyAppealValues_TBL" ToRole="Property_TBL" />
+  </EntityType>
+  <EntityType Name="PropertyAssessedValue_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PropertyId" Type="Int64" Nullable="false" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="AssessedValue" Type="Int64" />
+    <Property Name="TaxRollStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="Modified" Type="DateTime" Precision="3" />
+    <Property Name="ModifyBy" Type="Int32" />
+    <NavigationProperty Name="Property_TBL" Relationship="Self.FK_PropertyAssessedValue_TBL_Property_TBL" FromRole="PropertyAssessedValue_TBL" ToRole="Property_TBL" />
+  </EntityType>
+  <EntityType Name="PropertyScrapeData_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" />
+    <Property Name="Section" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Lot" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Block" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PropertyScrapeDetail_TBL">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" />
+    <Property Name="PropertyId" Type="Int64" Nullable="false" />
+    <Property Name="IsFound" Type="Boolean" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <Association Name="FK_PropertyAppealValues_TBL_Property_TBL">
+    <End Role="Property_TBL" Type="Self.Property_TBL" Multiplicity="1" />
+    <End Role="PropertyAppealValues_TBL" Type="Self.PropertyAppealValues_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_TBL">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PropertyAppealValues_TBL">
+        <PropertyRef Name="PropertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PropertyAssessedValue_TBL_Property_TBL">
+    <End Role="Property_TBL" Type="Self.Property_TBL" Multiplicity="1" />
+    <End Role="PropertyAssessedValue_TBL" Type="Self.PropertyAssessedValue_TBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property_TBL">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PropertyAssessedValue_TBL">
+        <PropertyRef Name="PropertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PropertyTaxBustersEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ErrorLog_TBL" EntityType="Self.ErrorLog_TBL" />
+    <EntitySet Name="FallOut_TBL" EntityType="Self.FallOut_TBL" />
+    <EntitySet Name="Property_TBL" EntityType="Self.Property_TBL" />
+    <EntitySet Name="PropertyAppealValues_TBL" EntityType="Self.PropertyAppealValues_TBL" />
+    <EntitySet Name="PropertyAssessedValue_TBL" EntityType="Self.PropertyAssessedValue_TBL" />
+    <EntitySet Name="PropertyScrapeData_TBL" EntityType="Self.PropertyScrapeData_TBL" />
+    <EntitySet Name="PropertyScrapeDetail_TBL" EntityType="Self.PropertyScrapeDetail_TBL" />
+    <AssociationSet Name="FK_PropertyAppealValues_TBL_Property_TBL" Association="Self.FK_PropertyAppealValues_TBL_Property_TBL">
+      <End Role="Property_TBL" EntitySet="Property_TBL" />
+      <End Role="PropertyAppealValues_TBL" EntitySet="PropertyAppealValues_TBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PropertyAssessedValue_TBL_Property_TBL" Association="Self.FK_PropertyAssessedValue_TBL_Property_TBL">
+      <End Role="Property_TBL" EntitySet="Property_TBL" />
+      <End Role="PropertyAssessedValue_TBL" EntitySet="PropertyAssessedValue_TBL" />
+    </AssociationSet>
+    <FunctionImport Name="GetScrapeDataByTableName" EntitySet="PropertyScrapeData_TBL" ReturnType="Collection(PropertyTaxBustersModel.PropertyScrapeData_TBL)">
+      <Parameter Name="tableName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

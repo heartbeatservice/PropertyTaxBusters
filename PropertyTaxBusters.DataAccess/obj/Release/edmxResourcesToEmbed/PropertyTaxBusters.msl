@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PropertyTaxBustersModelStoreContainer" CdmEntityContainer="PropertyTaxBustersEntities">
+    <EntitySetMapping Name="ErrorLog_TBL">
+      <EntityTypeMapping TypeName="PropertyTaxBustersModel.ErrorLog_TBL">
+        <MappingFragment StoreEntitySet="ErrorLog_TBL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FallOut_TBL">
+      <EntityTypeMapping TypeName="PropertyTaxBustersModel.FallOut_TBL">
+        <MappingFragment StoreEntitySet="FallOut_TBL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Property_TBL">
+      <EntityTypeMapping TypeName="PropertyTaxBustersModel.Property_TBL">
+        <MappingFragment StoreEntitySet="Property_TBL">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="irreg_desc" ColumnName="irreg_desc" />
+          <ScalarProperty Name="wat_desc" ColumnName="wat_desc" />
+          <ScalarProperty Name="ratio1" ColumnName="ratio1" />
+          <ScalarProperty Name="ratio2" ColumnName="ratio2" />
+          <ScalarProperty Name="ratio3" ColumnName="ratio3" />
+          <ScalarProperty Name="new_dist" ColumnName="new_dist" />
+          <ScalarProperty Name="section" ColumnName="section" />
+          <ScalarProperty Name="block" ColumnName="block" />
+          <ScalarProperty Name="lot" ColumnName="lot" />
+          <ScalarProperty Name="lot1" ColumnName="lot1" />
+          <ScalarProperty Name="ht_enc" ColumnName="ht_enc" />
+          <ScalarProperty Name="garage" ColumnName="garage" />
+          <ScalarProperty Name="foundation" ColumnName="foundation" />
+          <ScalarProperty Name="bsmt_fin" ColumnName="bsmt_fin" />
+          <ScalarProperty Name="basement" ColumnName="basement" />
+          <ScalarProperty Name="irregular" ColumnName="irregular" />
+          <ScalarProperty Name="lot_acres" ColumnName="lot_acres" />
+          <ScalarProperty Name="rooms_bath" ColumnName="rooms_bath" />
+          <ScalarProperty Name="waterfront" ColumnName="waterfront" />
+          <ScalarProperty Name="built" ColumnName="built" />
+          <ScalarProperty Name="full_baths" ColumnName="full_baths" />
+          <ScalarProperty Name="half_baths" ColumnName="half_baths" />
+          <ScalarProperty Name="attic" ColumnName="attic" />
+          <ScalarProperty Name="fireplace" ColumnName="fireplace" />
+          <ScalarProperty Name="heat_type" ColumnName="heat_type" />
+          <ScalarProperty Name="fuel_type" ColumnName="fuel_type" />
+          <ScalarProperty Name="ext_wall" ColumnName="ext_wall" />
+          <ScalarProperty Name="lot_group" ColumnName="lot_group" />
+          <ScalarProperty Name="district" ColumnName="district" />
+          <ScalarProperty Name="dista" ColumnName="dista" />
+          <ScalarProperty Name="township" ColumnName="township" />
+          <ScalarProperty Name="house_numb" ColumnName="house_numb" />
+          <ScalarProperty Name="st_name" ColumnName="st_name" />
+          <ScalarProperty Name="village" ColumnName="village" />
+          <ScalarProperty Name="dir" ColumnName="dir" />
+          <ScalarProperty Name="zip_code" ColumnName="zip_code" />
+          <ScalarProperty Name="apt" ColumnName="apt" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="res_number" ColumnName="res_number" />
+          <ScalarProperty Name="res_street" ColumnName="res_street" />
+          <ScalarProperty Name="st_swis_co" ColumnName="st_swis_co" />
+          <ScalarProperty Name="owner_name" ColumnName="owner_name" />
+          <ScalarProperty Name="old_name" ColumnName="old_name" />
+          <ScalarProperty Name="mailing_ad" ColumnName="mailing_ad" />
+          <ScalarProperty Name="mailing_a1" ColumnName="mailing_a1" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zip_code1" ColumnName="zip_code1" />
+          <ScalarProperty Name="prop_class" ColumnName="prop_class" />
+          <ScalarProperty Name="class_suf" ColumnName="class_suf" />
+          <ScalarProperty Name="tax_class" ColumnName="tax_class" />
+          <ScalarProperty Name="lot_size" ColumnName="lot_size" />
+          <ScalarProperty Name="cav_land" ColumnName="cav_land" />
+          <ScalarProperty Name="cav_total" ColumnName="cav_total" />
+          <ScalarProperty Name="av_land" ColumnName="av_land" />
+          <ScalarProperty Name="av_total" ColumnName="av_total" />
+          <ScalarProperty Name="town_code" ColumnName="town_code" />
+          <ScalarProperty Name="lsqft" ColumnName="lsqft" />
+          <ScalarProperty Name="str_ind" ColumnName="str_ind" />
+          <ScalarProperty Name="bc_amt" ColumnName="bc_amt" />
+          <ScalarProperty Name="ed_amt" ColumnName="ed_amt" />
+          <ScalarProperty Name="style" ColumnName="style" />
+          <ScalarProperty Name="livunit" ColumnName="livunit" />
+          <ScalarProperty Name="rec_no" ColumnName="rec_no" />
+          <ScalarProperty Name="condolvl" ColumnName="condolvl" />
+          <ScalarProperty Name="lspace" ColumnName="lspace" />
+          <ScalarProperty Name="east" ColumnName="east" />
+          <ScalarProperty Name="north" ColumnName="north" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="traffic" ColumnName="traffic" />
+          <ScalarProperty Name="topo" ColumnName="topo" />
+          <ScalarProperty Name="loc" ColumnName="loc" />
+          <ScalarProperty Name="fron" ColumnName="fron" />
+          <ScalarProperty Name="util" ColumnName="util" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="mgfa" ColumnName="mgfa" />
+          <ScalarProperty Name="src" ColumnName="src" />
+          <ScalarProperty Name="tsplit" ColumnName="tsplit" />
+          <ScalarProperty Name="highlight" ColumnName="highlight" />
+          <ScalarProperty Name="fld_pnl" ColumnName="fld_pnl" />
+          <ScalarProperty Name="fld_zn" ColumnName="fld_zn" />
+          <ScalarProperty Name="fld_dt" ColumnName="fld_dt" />
+          <ScalarProperty Name="rate_t" ColumnName="rate_t" />
+          <ScalarProperty Name="recno" ColumnName="recno" />
+          <ScalarProperty Name="Client1" ColumnName="Client1" />
+          <ScalarProperty Name="Client2" ColumnName="Client2" />
+          <ScalarProperty Name="Client3" ColumnName="Client3" />
+          <ScalarProperty Name="Client4" ColumnName="Client4" />
+          <ScalarProperty Name="Client5" ColumnName="Client5" />
+          <ScalarProperty Name="Client6" ColumnName="Client6" />
+          <ScalarProperty Name="Client7" ColumnName="Client7" />
+          <ScalarProperty Name="Client8" ColumnName="Client8" />
+          <ScalarProperty Name="Client9" ColumnName="Client9" />
+          <ScalarProperty Name="Client10" ColumnName="Client10" />
+          <ScalarProperty Name="Client11" ColumnName="Client11" />
+          <ScalarProperty Name="Client12" ColumnName="Client12" />
+          <ScalarProperty Name="Client13" ColumnName="Client13" />
+          <ScalarProperty Name="Client14" ColumnName="Client14" />
+          <ScalarProperty Name="Client15" ColumnName="Client15" />
+          <ScalarProperty Name="SalesDate" ColumnName="SalesDate" />
+          <ScalarProperty Name="SalesPrice" ColumnName="SalesPrice" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyAppealValues_TBL">
+      <EntityTypeMapping TypeName="PropertyTaxBustersModel.PropertyAppealValues_TBL">
+        <MappingFragment StoreEntitySet="PropertyAppealValues_TBL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PropertyId" ColumnName="PropertyId" />
+          <ScalarProperty Name="RollYear" ColumnName="RollYear" />
+          <ScalarProperty Name="AppealType" ColumnName="AppealType" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedAssessment" ColumnName="UpdatedAssessment" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyAssessedValue_TBL">
+      <EntityTypeMapping TypeName="PropertyTaxBustersModel.PropertyAssessedValue_TBL">
+        <MappingFragment StoreEntitySet="PropertyAssessedValue_TBL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PropertyId" ColumnName="PropertyId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="AssessedValue" ColumnName="AssessedValue" />
+          <ScalarProperty Name="TaxRollStatus" ColumnName="TaxRollStatus" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyScrapeData_TBL">
+      <EntityTypeMapping TypeName="PropertyTaxBustersModel.PropertyScrapeData_TBL">
+        <MappingFragment StoreEntitySet="PropertyScrapeData_TBL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="Lot" ColumnName="Lot" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyScrapeDetail_TBL">
+      <EntityTypeMapping TypeName="PropertyTaxBustersModel.PropertyScrapeDetail_TBL">
+        <MappingFragment StoreEntitySet="PropertyScrapeDetail_TBL">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PropertyId" ColumnName="PropertyId" />
+          <ScalarProperty Name="IsFound" ColumnName="IsFound" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetScrapeDataByTableName" FunctionName="PropertyTaxBustersModel.Store.GetScrapeDataByTableName" />
+  </EntityContainerMapping>
+</Mapping>
