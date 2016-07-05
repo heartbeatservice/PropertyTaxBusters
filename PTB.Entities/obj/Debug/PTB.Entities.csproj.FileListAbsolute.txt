@@ -1,0 +1,10 @@
+D:\Arif\PTB\PTB.Entities\bin\Debug\PTB.Entities.dll
+D:\Arif\PTB\PTB.Entities\bin\Debug\PTB.Entities.pdb
+D:\Arif\PTB\PTB.Entities\obj\Debug\PTB.Entities.csprojResolveAssemblyReference.cache
+D:\Arif\PTB\PTB.Entities\obj\Debug\PTB.Entities.dll
+D:\Arif\PTB\PTB.Entities\obj\Debug\PTB.Entities.pdb
+C:\Projects\PTB\PTB.Entities\bin\Debug\PTB.Entities.dll
+C:\Projects\PTB\PTB.Entities\bin\Debug\PTB.Entities.pdb
+C:\Projects\PTB\PTB.Entities\obj\Debug\PTB.Entities.csprojResolveAssemblyReference.cache
+C:\Projects\PTB\PTB.Entities\obj\Debug\PTB.Entities.dll
+C:\Projects\PTB\PTB.Entities\obj\Debug\PTB.Entities.pdb

@@ -1,0 +1,15 @@
+D:\Arif\PTB\PTB.Entities\bin\Release\PTB.Entities.dll
+D:\Arif\PTB\PTB.Entities\bin\Release\PTB.Entities.pdb
+D:\Arif\PTB\PTB.Entities\obj\Release\PTB.Entities.csprojResolveAssemblyReference.cache
+D:\Arif\PTB\PTB.Entities\obj\Release\PTB.Entities.dll
+D:\Arif\PTB\PTB.Entities\obj\Release\PTB.Entities.pdb
+C:\Projects\Heartbeat\PTB\PTB.Entities\bin\Release\PTB.Entities.dll
+C:\Projects\Heartbeat\PTB\PTB.Entities\bin\Release\PTB.Entities.pdb
+C:\Projects\Heartbeat\PTB\PTB.Entities\obj\Release\PTB.Entities.csprojResolveAssemblyReference.cache
+C:\Projects\Heartbeat\PTB\PTB.Entities\obj\Release\PTB.Entities.dll
+C:\Projects\Heartbeat\PTB\PTB.Entities\obj\Release\PTB.Entities.pdb
+C:\Projects\github\PTB.FrontEnd\PTB.Entities\bin\Release\PTB.Entities.dll
+C:\Projects\github\PTB.FrontEnd\PTB.Entities\bin\Release\PTB.Entities.pdb
+C:\Projects\github\PTB.FrontEnd\PTB.Entities\obj\Release\PTB.Entities.csprojResolveAssemblyReference.cache
+C:\Projects\github\PTB.FrontEnd\PTB.Entities\obj\Release\PTB.Entities.dll
+C:\Projects\github\PTB.FrontEnd\PTB.Entities\obj\Release\PTB.Entities.pdb
