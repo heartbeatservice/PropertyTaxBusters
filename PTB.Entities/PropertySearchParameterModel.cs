@@ -35,5 +35,6 @@ namespace PTB.Entities
         public string city { get; set; }
         public string town { get; set; }
         public string zipCode { get; set; }
+        public bool isSoldProperty { get; set; }
     }
 }

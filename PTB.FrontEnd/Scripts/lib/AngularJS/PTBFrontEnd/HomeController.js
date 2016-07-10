@@ -4,6 +4,9 @@
     $scope.block = '';
     $scope.PageSize = 10;
     $scope.PageNumber = 1;
+    $scope.isSoldProperty = {
+        value: true
+    }
     $scope.propertiesData = [];
     $scope.isMainLoadingImageCollapsed = true;
     $scope.activeTab = 'legal';
@@ -70,7 +73,8 @@
                 street: $scope.street,
                 city: $scope.city,
                 town: $scope.town,
-                zipCode: $scope.zipCode
+                zipCode: $scope.zipCode,
+                isSoldProperty: $("#chkIsSoldProperty").is(':checked')
             };
         }
 

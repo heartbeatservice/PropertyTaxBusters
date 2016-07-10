@@ -102,7 +102,7 @@ namespace PTB.DataAccess
             }
         }
 
-        public PropertySearchModel AdvanceSearchProperty(int pageNumber, int pageSize, string houseNumber, string street, string city, string town, string zipCode)
+        public PropertySearchModel AdvanceSearchProperty(int pageNumber, int pageSize, string houseNumber, string street, string city, string town, string zipCode, bool isSoldProperty)
         {
             using (var conn = new SqlConnection(PTBConnectionString))
             {
@@ -119,6 +119,7 @@ namespace PTB.DataAccess
                     cmd.Parameters.Add("@city", SqlDbType.NVarChar).Value = city;
                     cmd.Parameters.Add("@town", SqlDbType.NVarChar).Value = town;
                     cmd.Parameters.Add("@zipCode", SqlDbType.NVarChar).Value = zipCode;
+                    cmd.Parameters.Add("@isSoldProperty", SqlDbType.Bit).Value = isSoldProperty;
 
                     PropertySearchModel propertySearchModel = new PropertySearchModel();
                     //var myReader = cmd.ExecuteReader();

@@ -51,7 +51,7 @@ namespace PTB.FrontEnd.Controllers
                 PropertyRepository _searchRepository = new PropertyRepository();
                 var propertySearchResult = _searchRepository.AdvanceSearchProperty(filters.PageNumber, filters.PageSize, 
                                                     filters.houseNumber, filters.street, filters.city,
-                                                    filters.town, filters.zipCode);
+                                                    filters.town, filters.zipCode, filters.isSoldProperty);
                 return propertySearchResult;
             }
             catch (Exception ex)
